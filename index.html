@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Styling and Editing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center><marquee>
+<h1>Created By Nitesh Kumar Singh</h1></marquee>
+<h1>Text Style Change</h1>
+</center>
+  <div id="container">
+    <textarea id="textArea" placeholder="Type your text here..."></textarea>
+    
+    <label for="fontSize">Select Font Size:</label>
+    <select id="fontSize" onchange="changeFontSize()">
+      <option value="12">12px</option>
+      <option value="16">16px</option>
+      <option value="20">20px</option>
+      <option value="24">24px</option>
+	  <option value="30">30px</option>
+      <option value="40">40px</option>
+      <option value="50">50px</option>
+      <option value="96">96px</option>
+    </select>
+
+    <label for="fontColor">Select Font Color:</label>
+    <input type="color" id="fontColor" onchange="changeFontColor()">
+
+    <label for="fontFamily">Select Font Family:</label>
+    <select id="fontFamily" onchange="changeFontFamily()">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+      <option value="Verdana, sans-serif">Verdana</option>
+      <option value="Courier New, monospace">Courier New</option>
+	  
+	  <option value="Cambria Math">Cambria Math</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+      <option value="Impact">Impact</option>
+      <option value="Javanese Text">Javanese Text</option>
+    </select>
+
+    <button onclick="addText()">Add Text</button>
+    <button onclick="undo()">Undo</button>
+    <button onclick="redo()">Redo</button>
+  </div>
+
+  <script text="javascript" src="javascript.js">
+</script>
+</body>
+</html>
