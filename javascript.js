@@ -39,8 +39,8 @@
     }
 
     function undo() {
-      if (textIndex > 0) {
-        textarea.value = textHistory[textIndex - 1];
+      if (textIndex >= 0) {
+        textarea.value = textHistory[textIndex - 0];
         textarea.style.fontSize = fontSizeHistory[textIndex - 1];
         textarea.style.color = fontColorHistory[textIndex - 1];
         textarea.style.fontFamily = fontFamilyHistory[textIndex - 1];
